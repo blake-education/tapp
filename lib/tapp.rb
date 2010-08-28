@@ -1,11 +1,17 @@
 require 'pp'
 
 class Object
-  def tapp
-    tap { pp block_given? ? yield(self) : self }
+  def tapp(tag=nil)
+    tap { 
+      print "#{tag}=" if tag
+      pp block_given? ? yield(self) : self 
+    }
   end
 
-  def taputs
-    tap { puts block_given? ? yield(self) : self }
+  def taputs(tag=nil)
+    tap { 
+      print "#{tag}=" if tag
+      puts block_given? ? yield(self) : self 
+    }
   end
 end

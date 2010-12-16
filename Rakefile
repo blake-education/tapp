@@ -4,12 +4,12 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "tapp"
-    gem.summary = 'tap { pp self }'
+    gem.name = "lachie-tapp"
+    gem.summary = 'tap { pp self } (lachie\'s verison)'
     gem.description = 'tap { pp self }'
-    gem.email = "ursm@ursm.jp"
-    gem.homepage = "http://github.com/esminc/tapp"
-    gem.authors = ["Keita Urashima"]
+    gem.email = "lachiec@gmail.com"
+    gem.homepage = "http://github.com/lachie/tapp"
+    gem.authors = ["Lachie Cox"]
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

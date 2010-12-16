@@ -1,6 +1,9 @@
 = tapp
 
-Description goes here.
+    { :your => 'object' }.tapp        #(stdout)=> {:your=>"object"}
+    { :my   => 'hash'   }.tapp(:mine) #(stdout)=> mine={:my=>"hash"}
+
+If you have `awesome_print` installed, it'll be used instead of `pp`.
 
 == Note on Patches/Pull Requests
  
@@ -14,4 +17,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Keita Urashima. See LICENSE for details.
+Copyright (c) 2010 Lachie Cox. See LICENSE for details.
